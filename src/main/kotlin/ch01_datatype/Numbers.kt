@@ -1,4 +1,4 @@
-package datatype
+package ch01_datatype
 
 fun main() {
     val oneByte: Byte = 1

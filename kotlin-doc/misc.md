@@ -10,7 +10,7 @@
 A number of packages are imported into every Kotlin 􏰀file by default:
 * kotlin.*
 * kotlin.annotation.*
-* kotlin.collections.*
+* kotlin.ch_collections.*
 * kotlin.comparisons.*(since1.1) — kotlin.io.*
 * kotlin.ranges.*
 * kotlin.sequences.*
@@ -20,7 +20,7 @@ A number of packages are imported into every Kotlin 􏰀file by default:
 
 
 ### 2. Imports
-* import class
+* import ch_class
     ```
     import org.example.Message // Message is now accessible without qualification
     

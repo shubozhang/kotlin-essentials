@@ -1,4 +1,4 @@
-package function
+package ch_function
 
 fun hello(): Unit{
     println("hello")
