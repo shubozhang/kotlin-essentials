@@ -159,3 +159,49 @@ var arr = IntArray(5) { it * 1 }
 
 
 **[⬆ Back to top](#contents)**
+
+
+### Variables
+* Kotlin uses type inference at compile time. So variable can be either assigning a value or declare a type.
+    ```kotlin
+    var age: Int 
+    ```
+    
+    ```kotlin
+    var age = 10
+    ```
+
+* var vs val
+    * val is immutable, like final in Java.
+    * var is mutable. Recommended in Kotlin. Unlike Java that prefers to use final.
+    
+    
+    
+### keywords
+* hard keywords
+* soft keywords
+
+
+### Kotlin vs Java
+* Kotlin does not have conditional operator `?` operation, you may use `if else`. 
+    * In Kotlin, `?` (safety operator) is used to
+    * `employee?.address?.country ?: "US"` // set default country = "US"
+    * Elvis operator `?:` . It receives two inputs and returns the first argument if it is non-null or the second one otherwise.
+check null.
+* Kotlin has no `static` keyword in syntax, but still has the concept on variable and function
+* Kotlin has no `new` keyword.
+* In Java, `==` checks if both objects point to the same memory location. `.equals()` method for content comparison.
+* In Kotlin, `==` (`!=`) and `.equals()` are used to compare content. `===` (`!==`) is used for reference comparison.
+* In Kotlin, some symbol operators are replaced by `or`, `and`, `xor`, etc.
+* In kotlin, `is` (`!is`) replaces `instance of`
+* casting
+    * Java: `(Employee) obj`
+    * Kotlin: `obj as Employee`. Safety cast `str as? String`
+* In Kotlin: String template
+    * `Employee name is $name and id is $id` . Note, to print out $change, `\$change`.   
+    * `the factor is ${numerator/denominator}`
+    * `Employee is is ${employee.id}`
+* Raw Strings: `""" this is a windows path: C:/Users/john"""` when you don't want to use escape. String
+template can be used in raw string.
+* REPL
+

@@ -1,4 +1,4 @@
-package ch01_datatype
+package ch01_datatype_null
 
 fun main() {
     var str = "not empty"
