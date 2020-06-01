@@ -31,10 +31,20 @@ fun main() {
     println(vNull == vCon)
 
 
-    // example 4: non-null assertion `!!`, if you want to throw nullPointerException
+
+
+    // example 4: nullable array
+    val nullableInts = arrayOfNulls<Int>(5)
+    for (i in nullableInts) {
+        println(i.toString())
+    }
+
+
+    // example: non-null assertion `!!`, if you want to throw nullPointerException
     val v1: String? = null
     val v2 = v1!!               // exception throws at this line.
     val v3 = v2.toUpperCase()
+
 
 }
 

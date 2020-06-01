@@ -20,6 +20,7 @@ A number of packages are imported into every Kotlin 􏰀file by default:
 
 
 ### 2. Imports
+* package name does not have to match path name
 * import ch_class
     ```
     import org.example.Message // Message is now accessible without qualification
@@ -32,7 +33,7 @@ A number of packages are imported into every Kotlin 􏰀file by default:
 
 * The import keyword is not restricted to importing classes; you can also use it to import other declarations:
     * top-level functions and properties;
-    * functions and properties declared in object declarations; — enumconstants.
+    * functions and properties declared in object declarations; — enum constants.
 
 
 
