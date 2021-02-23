@@ -8,28 +8,46 @@ package ch01_datatype_null
 * */
 
 fun main() {
+    // default type: int and double
+    val myInt = 1
+    val pi = 3.14
+    val e = 2.7182818284
+
+    println("myInt is int: ${myInt is Int}")
+    println("pi is double: ${pi is Double}")
+    println("e is double: ${e is Double}")
+
     val oneByte: Byte = 1 // Byte type is required
     val oneShort: Short = 10  // Short type is required
-    val one = 1 // default type is int
-    val threeBillion = 3_000_000_000 // Long
-    val oneLong = 1L // Long
 
-    val pi = 3.14 // default Double
-    val e = 2.7182818284 // default Double
-    val eFloat = 2.7182818284f // Float, actual value is 2.7182817
+    // Long
+    val threeBillion = 3_000_000_000
+    val oneLong = 1L
 
+    // Float, actual value is 2.7182817
+    val eFloat = 2.7182818284f
     val hexadecimals = 0x0F
     val binaries =  0b00001011
 
-    val myChar = 65.toChar()
-    println(myChar)
+    testChar()
 
-
-    val myBoolean = true
+    testBoolean()
 
     boxing()
 }
 
+fun testChar() {
+    // don't need declare type
+    val oneChar = 'c'
+    val myChar = 65.toChar()
+    println(myChar)
+}
+
+fun testBoolean() {
+    // don't need declare type
+    val myBoolean = true
+    println(myBoolean)
+}
 
 fun boxing() {
     val a = 10000
