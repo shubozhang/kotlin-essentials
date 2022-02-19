@@ -1,6 +1,15 @@
-package ch01_datatype_null
+package ch02_control_flow
 
 fun main() {
+
+    testIterator()
+
+    testIndex()
+
+    testWithIndex()
+}
+
+fun testIterator(){
     for (a in 1..100) {
         println(a)
     }
@@ -28,3 +37,17 @@ fun main() {
     }
 }
 
+fun testIndex(){
+    val array = arrayOf("a", "b", "c")
+    for (i in array.indices) {
+        println(array[i])
+    }
+}
+
+
+fun testWithIndex(){
+    val array = arrayOf("a", "b", "c")
+    for ((index, value) in array.withIndex()) {
+        println("the element at $index is $value")
+    }
+}

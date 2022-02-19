@@ -1,19 +1,27 @@
-package ch01_datatype_null
+package ch01_datatype
 
 /*
 * 1. Best practices that do not define nullable type unless you have to.
-* 2.
 * */
 
 fun main() {
-    // example 1: nullable obj
+    testNullableObj()
+
+    testEqual()
+
+    testNullableArray()
+
+    testNonNullAssertion()
+}
+
+fun testNullableObj() {
     val str: String? = "this is not a null"
     val str1: String? = null
     println("what happens when we do this: ${str?.toUpperCase()}")
     println("what happens when we do this: ${str1?.toUpperCase()}")
 
 
-    // example 2: String and String? are two different type: printText(str) type mismatch error
+    // String and String? are two different type: printText(str) type mismatch error
     // first way
     printText(str!!)
 
@@ -24,28 +32,32 @@ fun main() {
     if (str != null) {
         printText(str)
     }
+}
 
+fun testEqual() {
     // example 3: `==` is a safe operator
     val vNull: String? = null
     val vCon = "I am non-null string"
     println(vNull == vCon)
+}
 
 
-
+fun testNullableArray(){
 
     // example 4: nullable array
     val nullableInts = arrayOfNulls<Int>(5)
     for (i in nullableInts) {
         println(i.toString())
     }
+}
 
-
-    // example: non-null assertion `!!`, if you want to throw nullPointerException
+fun testNonNullAssertion(){
+    // non-null assertion `!!`, if you want to throw nullPointerException
     val v1: String? = null
     val v2 = v1!!               // exception throws at this line.
     val v3 = v2.toUpperCase()
 
-
+    println("Testing non-null assertion $v3")
 }
 
 fun printText(text: String) {

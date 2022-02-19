@@ -1,4 +1,4 @@
-package ch01_datatype_null
+package ch01_datatype
 
 import java.math.BigDecimal
 
@@ -15,7 +15,7 @@ fun main() {
     println(long3 is Array<Int>)
 
 
-    createArray()
+    primitiveTypeArray()
 
     loopArray()
 
@@ -23,7 +23,7 @@ fun main() {
 }
 
 
-fun createArray() {
+fun primitiveTypeArray() {
     // it is more efficient than general type of `arrayOf`. Also, it is matching to the Java primitive type of int type array
     val myIntArray = intArrayOf(1, 2, 3)
     val myIntArr2 = IntArray(5) // default value is 0
@@ -33,15 +33,15 @@ fun createArray() {
     }
 
     // using lambda
-    var lotsOfNum = Array(10000000){i: Int -> i }
+    val lotsOfNum = Array(10000000){ i: Int -> i }
     println(lotsOfNum.size)
 
-    var allZeros = Array(100) {0}
+    val allZeros = Array(100) {0}
     println(allZeros.size)
 }
 
 fun loopArray() {
-    var someArray : Array<Int> = arrayOf(1, 2, 3)
+    val someArray : Array<Int> = arrayOf(1, 2, 3)
     for (num in someArray) {
         println(num)
     }

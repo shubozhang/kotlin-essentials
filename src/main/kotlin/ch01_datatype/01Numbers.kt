@@ -1,4 +1,4 @@
-package ch01_datatype_null
+package ch01_datatype
 
 /*
 * 1. Kotlin default data types are int and double.
@@ -8,6 +8,23 @@ package ch01_datatype_null
 * */
 
 fun main() {
+
+    testNums()
+
+    testHex()
+
+    testByte()
+
+    testShort()
+
+    testChar()
+
+    testBoolean()
+
+    boxing()
+}
+
+fun testNums(){
     // default type: int and double
     val myInt = 1
     val pi = 3.14
@@ -17,23 +34,34 @@ fun main() {
     println("pi is double: ${pi is Double}")
     println("e is double: ${e is Double}")
 
-    val oneByte: Byte = 1 // Byte type is required
-    val oneShort: Short = 10  // Short type is required
+    // Float, actual value is 2.7182817
+    val eFloat = 2.7182818284f
+    println("my float is $eFloat")
+}
 
-    // Long
+fun testByte() {
+    val oneByte: Byte = 1 // Byte type is required
+    println("my byte is $oneByte")
+}
+
+fun testShort() {
+    val oneShort: Short = 10  // Short type is required
+    println("my short is $oneShort")
+}
+
+fun testLong() {
     val threeBillion = 3_000_000_000
     val oneLong = 1L
 
-    // Float, actual value is 2.7182817
-    val eFloat = 2.7182818284f
+    println("my two longs are $threeBillion and $oneLong")
+}
+
+fun testHex(){
+
     val hexadecimals = 0x0F
     val binaries =  0b00001011
 
-    testChar()
-
-    testBoolean()
-
-    boxing()
+    println("my floats are $hexadecimals, and $binaries")
 }
 
 fun testChar() {
