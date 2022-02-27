@@ -1,7 +1,9 @@
-package ch_class
+package ch03_class
 
 /*
 * Everything in kotlin is public final by default.
+*
+* Any is the default superclass: equals(), hashCode(), and toString()
 *
 * Inheritance modifiers:
 * 1. final is default, class is not extendable and fun is not overridable.
@@ -13,6 +15,12 @@ package ch_class
 *    3) abstract methods are open by default and must be overridden.
 * 4. override: Overridden members are open by default.
 *    1) you can use final to declare fun as not overridable.
+*
+* 5. If the derived class has a primary constructor, the base class can (and must) be initialized right there, using
+* the parameters of the primary constructor.
+
+  6. If the derived class has no primary constructor, then each secondary constructor has to initialize the base
+type using the super keyword, or to delegate to another constructor which does that.
 * */
 
 fun main() {

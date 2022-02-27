@@ -1,4 +1,4 @@
-package ch_class
+package ch03_class
 
 // semi-colon is required after the last enum member
 enum class Department(val fullName: String, val numOfEmployees: Int) {

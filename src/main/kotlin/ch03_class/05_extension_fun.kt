@@ -1,4 +1,4 @@
-package ch_class
+package ch03_class
 
 /*
 * Extension fun lets you to extend any class you want to extend.

@@ -1,4 +1,4 @@
-package ch_class
+package ch03_class
 
 import java.time.Year
 
@@ -103,7 +103,7 @@ class SomeClass3 private constructor(val someString: String) {
 
 // 3. object expression example
 interface Config {
-    fun setResource(num: Int): String 
+    fun setResource(num: Int): String
 }
 fun setEastConfig(iConfig: Config) = println("printing from setEastConfig with 10 times ${iConfig.setResource(10)}")
 fun setWestConfig(iConfig: Config) = println("printing from setWestConfig with 100 times ${iConfig.setResource(100)}")

@@ -1,4 +1,4 @@
-package ch_class
+package ch03_class
 
 /*
 * Data class is a concise way to provide an immutable class.

@@ -1,4 +1,4 @@
-package ch_class
+package ch03_class
 
 /*
 * 1. fun default return type is unit
@@ -52,7 +52,7 @@ class Employee(private val firstName: String) {
 
 
 // you can only have one vararg
-// non-vararg needs to use name parameter if it is declared before vararg 
+// non-vararg needs to use name parameter if it is declared before vararg
 // example, color needs to be name parameter, but model not.
 fun printColors(model: String, vararg cars: Car, color: String) {
     for(car in cars){

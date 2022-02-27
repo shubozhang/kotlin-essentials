@@ -1,4 +1,4 @@
-package ch_class
+package ch03_class
 
 /*
 * Higher order functions: either return a func or  take funcs as parameters.

@@ -1,4 +1,4 @@
-package ch_class
+package ch03_class
 
 /*
 * 1. interface is extendable by default, no open key word needed.

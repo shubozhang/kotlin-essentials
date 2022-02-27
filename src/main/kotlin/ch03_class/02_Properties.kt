@@ -1,7 +1,12 @@
-package ch_class
+package ch03_class
 
 
 /*
+* Declaring Properties:
+* 1) var: mutable
+* 2) val: immutable and read-only
+*
+*
 * 1. The private property in kotlin cannot use get/set directly like Java (private field, but public get/set). Its get/set has the
 * same visibility which is private.
 *
