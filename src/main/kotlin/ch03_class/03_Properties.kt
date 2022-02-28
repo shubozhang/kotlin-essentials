@@ -6,7 +6,14 @@ package ch03_class
 * 1) var: mutable
 * 2) val: immutable and read-only
 *
-*
+* The full syntax for declaring a property is
+        var <propertyName>[: <PropertyType>] [= <property_initializer>]
+                                                [<getter>]
+                                                [<setter>]
+        The initializer, getter and setter are optional. Property type is optional if it can be inferred from the
+        initializer (or from the getter return type)
+
+
 * 1. The private property in kotlin cannot use get/set directly like Java (private field, but public get/set). Its get/set has the
 * same visibility which is private.
 *

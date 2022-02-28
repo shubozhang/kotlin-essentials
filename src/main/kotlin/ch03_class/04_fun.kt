@@ -1,6 +1,4 @@
-package ch03_class
-
-/*
+package ch03_class/*
 * 1. fun default return type is unit
 * 2. vararg
 *   1) you can only have one vararg
