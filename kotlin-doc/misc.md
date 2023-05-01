@@ -10,7 +10,7 @@
 A number of packages are imported into every Kotlin 􏰀file by default:
 * kotlin.*
 * kotlin.annotation.*
-* kotlin.ch_collections.*
+* kotlin.bryan.ch_collections.*
 * kotlin.comparisons.*(since1.1) — kotlin.io.*
 * kotlin.ranges.*
 * kotlin.sequences.*

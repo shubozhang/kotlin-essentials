@@ -6,13 +6,13 @@
 ### Visibility Modifiers
 * Top-Level Items
 
-    |Access Modifier|Kotlin|Java|
-    |---|---|---|
-    |`private`|only visible inside the file| Can't be used|
-    |`protected`| can't be used| can't be used|
-    |`internal` | visible within the same module| N/A|
-    |`public`| visible everywhere| visible everywhere|
-    |(default)| default is `pubic`| visible within package|
+    |Access Modifier| Kotlin                         | Java                   |
+    |--------------------------------|------------------------|----|
+    |`private`| only visible inside the file   | Can't be used          |
+    |`protected`| can't be used                  | can't be used          |
+    |`internal` | visible within the same module | N/A                    |
+    |`public`| visible everywhere             | visible everywhere     |
+    |(default)| default is `pubic`             | visible within package |
     
    * In Java, you can only have one public class, since the name of public class should match to the file name.
     However, in kotlin, there is no matching requirement between file name and class name. So you can
