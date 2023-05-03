@@ -1,6 +1,4 @@
-
-
-package kotlinx.coroutines.guide.exampleContext07
+package bryan.ch10.coroutines.guide
 
 import kotlinx.coroutines.*
 
